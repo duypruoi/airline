@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Q Airlines Website</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="THUE.css" />
+  </head>
+  <!-- Header -->
+  <header class="header1">
+    <div class="container1">
+      <div class="logo-container1">
+        <a href="index.html">   <!-- bám vào logo quay về trang chủ -->
+          <img
+            alt="Logo Q Airlines"
+            class="logo1"
+            src="https://statics.vinpearl.com/thue-xe-tu-lai-ha-noi-1_1691044493.jpg"
+          />
+        </a>
+      </div>
+      <div class="header-right1">
+        <a href="#">Đăng nhập</a>
+        <a href="#">Đăng ký</a>
+        <a href="#">Trợ giúp <i class="fas fa-info-circle"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal Login -->
+  <div
+    id="loginModal"
+    class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center"
+  >
+    <div class="modal-content bg-white p-8 rounded-lg shadow-lg w-1/3">
+      <span
+        id="closeModal"
+        class="absolute top-0 right-0 p-2 cursor-pointer text-xl text-gray-500"
+        >×</span
+      >
+      <h2 class="text-xl font-bold mb-4">Đăng nhập</h2>
+      <form action="#" method="POST">
+        <div class="mb-4">
+          <label for="username" class="block text-gray-700">Tài khoản</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="w-full p-2 border border-gray-300 rounded-lg"
+            placeholder="Nhập tài khoản"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700">Mật khẩu</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full p-2 border border-gray-300 rounded-lg"
+            placeholder="Nhập mật khẩu"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600"
+        >
+          Đăng nhập
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <a href="#">Chuyến bay <i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Điểm đến</a>
+        <a href="#" class="dropdown-item">Lịch bay</a>
+        <a href="#" class="dropdown-item">Ưu đãi</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Thông tin hành trình <i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Check-in</a>
+        <a href="TTSB.html" class="dropdown-item">Thông tin sân bay</a>
+        <a href="#" class="dropdown-item">Chuyến bay của tôi</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Dịch vụ <i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Dịch vụ hỗ trợ</a>
+        <a href="#" class="dropdown-item">Dịch vụ đặc biệt</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Mua vé <i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Đặt mua</a>
+        <a href="#" class="dropdown-item">Hướng dẫn mua</a>
+        <a href="#" class="dropdown-item">Thanh toán</a>
+        <a href="#" class="dropdown-item">Thuế - Lệ phí</a>
+        <a href="#" class="dropdown-item">Phụ thu</a>
+      </div>
+    </div>
+  </div>
+</html>
+
+
+  <!-- Thuế  -->
+
+<div class="header-containerTHUE">
+  <h1>Thông Tin Thuế, Lệ Phí và Phụ Thu</h1>
+  <p>
+    Hãy tham khảo các loại thuế, lệ phí và phụ thu khi bay cùng QAirline
+  </p>
+</div>
+</header>
+
+  <!-- Thuế  -->
+<main>
+<div class="main-containerTHUE">
+  <!-- Thuế và Lệ Phí -->
+  <section id="taxes-feesTHUE" class="taxes-sectionTHUE">
+    <h2>Thuế và Lệ Phí</h2>
+    <table class="taxes-tableTHUE">
+      <thead>
+        <tr>
+          <th>Loại Thuế / Lệ Phí</th>
+          <th>Mô Tả</th>
+          <th>Khoản Phí</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thuế sân bay</td>
+          <td>Thuế áp dụng khi hành khách sử dụng dịch vụ sân bay.</td>
+          <td>200,000 VND</td>
+        </tr>
+        <tr>
+          <td>Thuế an ninh</td>
+          <td>Thuế an ninh đảm bảo an toàn trong suốt chuyến bay.</td>
+          <td>50,000 VND</td>
+        </tr>
+        <tr>
+          <td>Phí hành lý ký gửi</td>
+          <td>Áp dụng khi hành lý vượt quá giới hạn cho phép.</td>
+          <td>100,000 VND</td>
+        </tr>
+        <tr>
+          <td>Thuế giá trị gia tăng (VAT)</td>
+          <td>
+            Thuế VAT áp dụng cho các dịch vụ trên chuyến bay và tại sân
+            bay.
+          </td>
+          <td>10%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Phụ Thu -->
+  <section id="surchargesTHUE" class="surcharges-sectionTHUE">
+    <h2>Phụ Thu</h2>
+    <table class="surcharges-tableTHUE">
+      <thead>
+        <tr>
+          <th>Loại Phụ Thu</th>
+          <th>Mô Tả</th>
+          <th>Khoản Phí</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Phụ thu hành lý quá cước</td>
+          <td>
+            Áp dụng khi hành lý vượt quá trọng lượng hoặc kích thước quy
+            định.
+          </td>
+          <td>150,000 VND / kg</td>
+        </tr>
+        <tr>
+          <td>Phụ thu chỗ ngồi ưu tiên</td>
+          <td>
+            Áp dụng khi hành khách yêu cầu chỗ ngồi gần cửa thoát hiểm
+            hoặc ghế ưu tiên.
+          </td>
+          <td>150,000 VND</td>
+        </tr>
+        <tr>
+          <td>Phụ thu chuyến bay đêm</td>
+          <td>Áp dụng cho chuyến bay cất cánh sau 22:00.</td>
+          <td>200,000 VND</td>
+        </tr>
+        <tr>
+          <td>Phụ thu chuyển nhượng vé</td>
+          <td>
+            Áp dụng khi hành khách yêu cầu chuyển nhượng vé sang tên người
+            khác.
+          </td>
+          <td>500,000 VND</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+</main>
+
+
+   <!-- Footer -->
+   <footer class="footer" style="background-image: url(images-airplane/site-footer-shape-1.png)">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Liên kết nhanh -->
+        <div class="footer-section">
+          <h3 class="footer-title">Liên kết nhanh</h3>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Trang chủ</a></li>
+            <li><a href="#" class="footer-link">Chuyến bay</a></li>
+            <li><a href="#" class="footer-link">Mua vé</a></li>
+            <li><a href="#" class="footer-link">Thông tin hành trình</a></li>
+            <li><a href="#" class="footer-link">Dịch vụ khách hàng</a></li>
+          </ul>
+        </div>
+
+        <!-- Liên hệ -->
+        <div class="footer-section">
+          <h3 class="footer-title">Liên hệ</h3>
+          <ul class="footer-list">
+            <li>
+              Email:
+              <a href="mailto:support@baae.com" class="footer-link"
+                >support@qairline.com</a
+              >
+            </li>
+            <li>
+              Điện thoại:
+              <a href="tel:+84912345678" class="footer-link">+84 123456789</a>
+            </li>
+            <li>Địa chỉ: 40 Hàng Bài, Hoàn Kiếm, Hà Nội</li>
+          </ul>
+        </div>
+
+<!-- Chính sách và điều khoản -->
+<div class="footer-section">
+<h3 class="footer-title">Chính sách</h3>
+<ul class="footer-list">
+  <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+  <li><a href="#" class="footer-link">Điều khoản dịch vụ</a></li>
+  <li><a href="#" class="footer-link">Chính sách hoàn tiền</a></li>
+  <li>
+    <a href="#" class="footer-link">FAQ (Câu hỏi thường gặp)</a>
+  </li>
+</ul>
+</div>
+        <!-- Mạng xã hội -->
+        <div class="footer-section">
+          <h3 class="footer-title">Kết nối với chúng tôi</h3>
+          <div class="social-links">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="social-link facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="social-link twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="social-link instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="social-link linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 BAAE. Tất cả quyền lợi được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

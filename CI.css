@@ -1,0 +1,468 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #79817c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #f8f7f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  #closeModal {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: flex;
+  }
+  
+  /* Header */
+  .header1 {
+    background-color: #123821;
+    color: white;
+    padding: 16px 24px;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo1 {
+    height: 130px; /* Äiį»u chį»‰nh kĆ­ch thĘ°į»›c logo */
+    margin-right: 16px;
+  }
+  
+  .header-right1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right1 a {
+    margin-left: 16px;
+    color: #79817c;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header-right1 a:hover {
+    color: #f8f7f1;
+    text-decoration: underline;
+  }
+  
+  .header-right1 a i {
+    margin-left: 5px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #f8f7f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #123821;
+    font-size: 16px;
+    margin: 0 20px;
+    position: relative;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #a79132;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #f8f7f1;
+    min-width: 160px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    padding: 12px;
+    font-size: 14px;
+    color: #123821;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f7f1;
+  }
+  
+  /* Add icon to dropdown link */
+  .navbar i {
+    margin-left: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      align-items: flex-start;
+    }
+    .navbar a {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #123821;
+    color: #f8f7f1;
+    padding: 40px 20px;
+    background-size: 50%; /* Ảnh sẽ bao phủ toàn bộ khung */
+    background-position: bottom; /* Ảnh được căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    color: #79817c;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #79817c;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #f8f7f1;
+  }
+  
+  /* Social Media Icons */
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #f8f7f1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* Social Media Icon Hover Colors */
+  .social-link.facebook:hover {
+    color: #3b5998;
+  }
+  
+  .social-link.twitter:hover {
+    color: #1da1f2;
+  }
+  
+  .social-link.instagram:hover {
+    color: #e4405f;
+  }
+  
+  .social-link.linkedin:hover {
+    color: #0077b5;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    color: #79817c;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .checkin-containerCI {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkin-leftCI,
+  .checkin-rightCI {
+    width: 48%;
+  }
+  
+  .checkin-leftCI h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .checkin-leftCI p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .checkin-leftCI input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .checkin-leftCI input:focus {
+    border-color: #ffcc00;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+  }
+  
+  .checkin-leftCI button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #a79132;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .checkin-leftCI button:hover {
+    background-color: #958017;
+  }
+  
+  .checkin-rightCI p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .checkin-rightCI .highlight-sectionCI {
+    border: 1px solid #ffcc00;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff8e1;
+    margin-bottom: 25px;
+  }
+  
+  .checkin-rightCI .highlight-sectionCI h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .checkin-rightCI .highlight-sectionCI ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+  
+  .checkin-rightCI .highlight-sectionCI ul li {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .checkin-rightCI .highlight-sectionCI a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .checkin-rightCI .highlight-sectionCI a:hover {
+    text-decoration: underline;
+  }
+  
+  .checkin-rightCI h2 {
+    color: #d9534f;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .checkin-rightCI h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .checkin-rightCI ul {
+    padding-left: 20px;
+    list-style: circle;
+  }
+  
+  .checkin-rightCI ul li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  @media (max-width: 1024px) {
+    .checkin-containerCI {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .checkin-leftCI,
+    .checkin-rightCI {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .checkin-container {
+      padding: 20px;
+    }
+    .checkin-left h1 {
+      font-size: 24px;
+    }
+    .checkin-left input {
+      font-size: 14px;
+      padding: 10px;
+    }
+    .checkin-left button {
+      font-size: 15px;
+      padding: 10px;
+    }
+    .checkin-right h2,
+    .checkin-right h3 {
+      font-size: 18px;
+    }
+  }
+  
+  .checkin-modal-CI {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+  }
+  
+  .checkin-modal-content-CI {
+    text-align: center;
+  }
+  
+  .close-btn-CI {
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  /* Nền tối cho khi modal xuất hiện */
+  .checkin-modal-overlay-CI {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Nền tối với độ mờ */
+    display: none; /* Mặc định ẩn */
+    z-index: 999;
+  }
+  

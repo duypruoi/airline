@@ -1,0 +1,422 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #79817c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #f8f7f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  #closeModal {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: flex;
+  }
+  
+  /* Header */
+  .header1 {
+    background-color: #123821;
+    color: white;
+    padding: 16px 24px;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo1 {
+    height: 130px;
+    margin-right: 16px;
+  }
+  
+  .header-right1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right1 a {
+    margin-left: 16px;
+    color: #79817c;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header-right1 a:hover {
+    color: #f8f7f1;
+    text-decoration: underline;
+  }
+  
+  .header-right1 a i {
+    margin-left: 5px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #f8f7f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #123821;
+    font-size: 16px;
+    margin: 0 20px;
+    position: relative;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #a79132;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #f8f7f1;
+    min-width: 160px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    padding: 12px;
+    font-size: 14px;
+    color: #123821;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f7f1;
+  }
+  
+  /* Thêm icon vào dropdown link */
+  .navbar i {
+    margin-left: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      align-items: flex-start;
+    }
+    .navbar a {
+      margin: 10px 0;
+    }
+  }
+  
+  /* khung trên cùng */
+  .heroKM2-container {
+    background-color: #f8f7f1; /* Soft background to make content stand out */
+    padding: 40px 20px; /* Increased padding for more space */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for elegance */
+    width: 70%; /* More controlled width */
+    margin: 50px auto; /* Center-align and top margin for space */
+    text-align: center;
+  }
+  
+  .heroKM2-container {
+    margin-bottom: 50px; /* Thêm khoảng cách dưới Hero để không chồng lên phần Promo */
+  }
+  
+  .heroKM2-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .heroKM2-container .buttonKM2 {
+    background-color: #ff6600;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px; /* Slightly larger font for clarity */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .heroKM2-container .buttonKM2:hover {
+    background-color: #e65c00;
+  }
+  
+  /* khung dưới */
+  .promo-containerKM2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px; /* Tăng khoảng cách trên */
+    margin-bottom: 60px; /* Thêm margin dưới để tạo khoảng cách với footer */
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .promo-cardKM2 {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .promo-cardKM2:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Elevated hover effect */
+  }
+  
+  .promo-cardKM2 img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .promo-cardKM2 h3 {
+    font-size: 22px;
+    color: #123821;
+    margin: 20px 0;
+  }
+  
+  .promo-cardKM2 p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .promo-cardKM2 .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+  }
+  
+  .promo-cardKM2 .details {
+    color: #123821;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #123821;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .promo-cardKM2 .details:hover {
+    background-color: #123821;
+    color: white;
+  }
+  
+  /* Modal Styling */
+  .modalKM2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for emphasis */
+    overflow: auto;
+    padding-top: 60px;
+  }
+  
+  .modal-contentKM2 {
+    background-color: white;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 75%;
+    border-radius: 10px;
+  }
+  
+  .closeKM2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeKM2:hover,
+  .closeKM2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #123821;
+    color: #f8f7f1;
+    padding: 40px 20px;
+    background-size: 50%; /* Ảnh sẽ bao phủ toàn bộ khung */
+    background-position: bottom; /* Ảnh được căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    color: #79817c;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #79817c;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #f8f7f1;
+  }
+  
+  /* Social Media Icons */
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #f8f7f1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* Social Media Icon Hover Colors */
+  .social-link.facebook:hover {
+    color: #3b5998;
+  }
+  
+  .social-link.twitter:hover {
+    color: #1da1f2;
+  }
+  
+  .social-link.instagram:hover {
+    color: #e4405f;
+  }
+  
+  .social-link.linkedin:hover {
+    color: #0077b5;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    color: #79817c;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .promo-containerKM2 {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .heroKM2-container {
+      width: 90%;
+    }
+  }
+  

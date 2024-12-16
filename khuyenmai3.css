@@ -1,0 +1,341 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #79817c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #f8f7f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  #closeModal {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: flex;
+  }
+  
+  /* Header */
+  .header1 {
+    background-color: #123821;
+    color: white;
+    padding: 16px 24px;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo1 {
+    height: 130px;
+    margin-right: 16px;
+  }
+  
+  .header-right1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right1 a {
+    margin-left: 16px;
+    color: #79817c;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header-right1 a:hover {
+    color: #f8f7f1;
+    text-decoration: underline;
+  }
+  
+  .header-right1 a i {
+    margin-left: 5px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #f8f7f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #123821;
+    font-size: 16px;
+    margin: 0 20px;
+    position: relative;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #a79132;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #f8f7f1;
+    min-width: 160px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    padding: 12px;
+    font-size: 14px;
+    color: #123821;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f7f1;
+  }
+  
+  .navbar i {
+    margin-left: 5px;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #123821;
+    color: #f8f7f1;
+    padding: 40px 20px;
+    background-size: 50%; /* Ảnh sẽ bao phủ toàn bộ khung */
+    background-position: bottom; /* Ảnh được căn giữa */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    color: #79817c;
+    padding: 0;
+  }
+  
+  .footer-link {
+    color: #79817c;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #f8f7f1;
+  }
+  
+  /* Social Media Icons */
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #f8f7f1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* Social Media Icon Hover Colors */
+  .social-link.facebook:hover {
+    color: #3b5998;
+  }
+  
+  .social-link.twitter:hover {
+    color: #1da1f2;
+  }
+  
+  .social-link.instagram:hover {
+    color: #e4405f;
+  }
+  
+  .social-link.linkedin:hover {
+    color: #0077b5;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    color: #79817c;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* KM3 */
+  
+  .containerKM3 {
+    width: 90%;
+    margin: 40px auto; /* Cải thiện margin của container */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .titleKM3 {
+    color: #123821;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px; /* Tăng khoảng cách với các phần khác */
+    text-transform: uppercase;
+  }
+  
+  /* Bố cục dịch vụ */
+  .servicesKM3,
+  .featuresKM3 {
+    display: flex;
+    justify-content: space-evenly; /* Giãn đều các phần tử */
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .serviceKM3,
+  .featureKM3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .serviceKM3:hover,
+  .featureKM3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-iconKM3,
+  .feature-iconKM3 {
+    font-size: 40px;
+    color: #123821;
+    margin-bottom: 15px;
+  }
+  
+  .service-titleKM3,
+  .feature-titleKM3 {
+    font-size: 20px;
+    color: #123821;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .service-descriptionKM3,
+  .feature-descriptionKM3 {
+    font-size: 14px;
+    color: #fff;
+    background: #123821;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+  
+  .feature-descriptionKM3 {
+    color: #fff;
+    background: #123821;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .servicesKM3,
+    .featuresKM3 {
+      flex-direction: column;
+      align-items: center; /* Căn giữa các phần tử */
+    }
+  }
+  
