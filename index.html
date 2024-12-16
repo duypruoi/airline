@@ -30,6 +30,122 @@
       </div>
     </header>
 
+      <!-- MOD for Login -->
+      <div id="loginMOD" class="MOD">
+        <div class="MOD-content">
+          <span id="closeLoginMOD" class="close-btn-MOD">&times;</span>
+          <h2>Đăng nhập</h2>
+          <form>
+            <label for="loginEmail">Email:</label>
+            <input
+              type="email"
+              id="loginEmail"
+              name="loginEmail"
+              required
+            /><br /><br />
+            <label for="loginPassword">Mật khẩu:</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="loginPassword"
+              required
+            /><br /><br />
+            <button type="submit">Đăng nhập</button>
+          </form>
+        </div>
+      </div>
+  
+  <!-- MOD for Login -->
+  <div id="loginMOD" class="MOD">
+    <div class="MOD-content">
+      <span id="closeLoginMOD" class="close-btn-MOD">&times;</span>
+      <h2>Đăng nhập</h2>
+      <form>
+        <label for="loginEmail">Email:</label>
+        <input
+          type="email"
+          id="loginEmail"
+          name="loginEmail"
+          required
+        /><br /><br />
+        <label for="loginPassword">Mật khẩu:</label>
+        <input
+          type="password"
+          id="loginPassword"
+          name="loginPassword"
+          required
+        /><br /><br />
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MOD for Signup -->
+  <div id="signupMOD" class="MOD">
+    <div class="MOD-content">
+      <span id="closeSignupMOD" class="close-btn-MOD">&times;</span>
+      <h2>Đăng ký</h2>
+      <form>
+        <label for="signupEmail">Email:</label>
+        <input
+          type="email"
+          id="signupEmail"
+          name="signupEmail"
+          required
+        /><br /><br />
+        <label for="signupPassword">Mật khẩu:</label>
+        <input
+          type="password"
+          id="signupPassword"
+          name="signupPassword"
+          required
+        /><br /><br />
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Get MOD elements and buttons
+    const loginMOD = document.getElementById("loginMOD");
+    const signupMOD = document.getElementById("signupMOD");
+    const loginBtn = document.getElementById("loginBtn");
+    const signupBtn = document.getElementById("signupBtn");
+    const closeLoginMOD = document.getElementById("closeLoginMOD");
+    const closeSignupMOD = document.getElementById("closeSignupMOD");
+
+    // When the user clicks the login button, open the login MOD
+    loginBtn.onclick = function () {
+      loginMOD.style.display = "flex";
+      signupMOD.style.display = "none";
+    };
+
+    // When the user clicks the signup button, open the signup MOD
+    signupBtn.onclick = function () {
+      signupMOD.style.display = "flex";
+      loginMOD.style.display = "none";
+    };
+
+    // When the user clicks on the close button for the login MOD, close it
+    closeLoginMOD.onclick = function () {
+      loginMOD.style.display = "none";
+    };
+
+    // When the user clicks on the close button for the signup MOD, close it
+    closeSignupMOD.onclick = function () {
+      signupMOD.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the MOD, close it
+    window.onclick = function (event) {
+      if (event.target === loginMOD) {
+        loginMOD.style.display = "none";
+      } else if (event.target === signupMOD) {
+        signupMOD.style.display = "none";
+      }
+    };
+  </script>
+
       <!-- Navbar -->
       <div class="navbar">
         <div class="dropdown">
@@ -63,7 +179,7 @@
           <div class="dropdown-menu">
             <a href="MV.html" class="dropdown-item">Đặt mua</a>
             <a href="HDM.html" class="dropdown-item">Hướng dẫn mua</a>
-            <a href="#" class="dropdown-item">Thanh toán</a>
+            <a href="TT.html" class="dropdown-item">Thanh toán</a>
             <a href="THUE.html" class="dropdown-item">Thuế - Lệ phí</a>
             <a href="THUE.html" class="dropdown-item">Phụ thu</a>
           </div>
