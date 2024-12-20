@@ -2,25 +2,23 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Q Airlines Website</title>
+    <title>Check-in</title>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CI.css" />
+    <link rel="stylesheet" href="check-in.css" />
   </head>
     <!-- Header -->
     <header class="header1">
       <div class="container1">
         <div class="logo-container1">
-            <a href="index.html">  <!-- bám vào logo quay về trang chủ -->
-            <img
-              alt="Logo Q Airlines"
-              class="logo1"
-              src="https://statics.vinpearl.com/thue-xe-tu-lai-ha-noi-1_1691044493.jpg"
-            />
-          </a>
+          <img
+            alt="Logo Q Airlines"
+            class="logo1"
+            src="images-airplane/logo_icon_final.png"
+          />
         </div>
         <div class="header-right1">
           <a href="#">Đăng nhập</a>
@@ -30,154 +28,87 @@
       </div>
     </header>
 
-      <!-- Navbar -->
-      <div class="navbar">
-        <div class="dropdown">
-          <a href="#">Chuyến bay <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="DD.html" class="dropdown-item">Điểm đến</a>
-            <a href="#" class="dropdown-item">Lịch bay</a>
-            <a href="UD.html" class="dropdown-item">Ưu đãi</a>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a href="#">Thông tin hành trình <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Check-in</a>
-            <a href="TTSB.html" class="dropdown-item">Thông tin sân bay</a>
-            <a href="#" class="dropdown-item">Chuyến bay của tôi</a>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a href="#">Dịch vụ <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="DV1.html" class="dropdown-item">Dịch vụ hỗ trợ</a>
-            <a href="DV2.html" class="dropdown-item">Dịch vụ đặc biệt</a>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a href="#">Mua vé <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="MV.html" class="dropdown-item">Đặt mua</a>
-            <a href="HDM.html" class="dropdown-item">Hướng dẫn mua</a>
-            <a href="#" class="dropdown-item">Thanh toán</a>
-            <a href="THUE.html" class="dropdown-item">Thuế - Lệ phí</a>
-            <a href="THUE.html" class="dropdown-item">Phụ thu</a>
-          </div>
+
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="dropdown">
+        <a href="#">Chuyến bay <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#travel-destinations" class="dropdown-item">Điểm đến</a>
+          <a href="lich-bay.html" class="dropdown-item">Lịch bay</a>
+          <a href="#promotion-section" class="dropdown-item">Ưu đãi</a>
         </div>
       </div>
 
-
-   <!-- Check-in Section -->
-<div class="checkin-containerCI">
-  <div class="checkin-leftCI">
-    <h1>CHECK-IN</h1>
-    <p>
-      Sẵn sàng cho chuyến bay vui vẻ, thoải mái, bạn có thể làm thủ tục chuyến bay trực tuyến nhanh chóng và đơn giản.
-    </p>
-    <input id="booking-code-CI" placeholder="Mã đặt chỗ" type="text" />
-   
-    <button onclick="showCheckInModalCI()">Tìm kiếm</button>
-  </div>
-  <div class="checkin-rightCI">
-    <p>
-      Quý khách chủ động làm thủ tục chuyến bay thông qua chức năng Online Check-in (làm thủ tục trực tuyến) tại trang website của QAirlines.
-    </p>
-    <p>
-      Đây là tính năng đơn giản, tiện lợi, nhanh gọn, hạn chế tối đa thời gian xếp hàng chờ làm thủ tục tại sân bay...
-    </p>
-          <div class="highlight-sectionCI">
-            <h3>Gợi ý hữu ích tại sân bay:</h3>
-            <ul>
-              <li>
-                Nếu không có hành lý ký gửi, Quý khách chuẩn bị hành lý xách tay theo đúng quy định của QAirlines (kích thước, trọng lượng tùy theo hạng vé), sau đó Quý khách chỉ cần di chuyển thẳng vào khu vực an ninh soi chiếu tại sân bay.
-              </li>
-              <li>
-                Lưu ý: Nếu có hành lý ký gửi, hành lý xách tay đến khu vực quầy làm thủ tục. Lưu ý quầy thủ tục đóng 40 phút trước giờ bay (chuyến bay quốc nội). 
-              </li>
-            </ul>
-          </div>
-          <h2>I. Các chuyến bay khai thác bởi QAirlines</h2>
-          <h3>1. Chuyến bay nội địa:</h3>
-          <ul>
-            <li>Áp dụng các chuyến bay xuất phát từ tất cả các sân bay tại Việt Nam</li>
-            <li>Thời gian áp dụng: Từ 24 tiếng đến 60 phút trước giờ khởi hành</li>
-          </ul>
-          <h3>2. Chuyến bay quốc tế:</h3>
-          <ul>
-            <li>Áp dụng các chuyến bay xuất phát từ:</li>
-            <li>Việt Nam</li>
-            <li>Pháp</li>
-            <li>Tây Ban Nha</li>
-            <li>Anh: Từ 24 tiếng đến 04 tiếng trước giờ bay</li>
-          </ul>
-          
-          <h3>Thời gian áp dụng:</h3>
-          <ul>
-            <li>Chuyến bay nội địa: Từ 24 tiếng đến 90 phút trước giờ bay.</li>
-            <li>Chuyến bay quốc tế xuất phát từ Anh: Từ 24 tiếng đến 04 tiếng trước giờ bay.</li>
-          </ul>
-          
-          <h3>Quy định chung:</h3>
-          <p>
-            Quý khách cần chuẩn bị đầy đủ giấy tờ du lịch, còn hạn, phù hợp quy định Xuất/Nhập cảnh và lưu trú.
-          </p>
-          
-          <h3>Khởi hành từ Tp. Hồ Chí Minh (SGN):</h3>
-          <p>
-            Đối với chuyến bay Quốc tế, Quý khách làm thủ tục trực tuyến (Online Check-in) và in ra Thẻ lên tàu bay dưới dạng khổ giấy A4 trước khi ra sân bay. Thẻ lên tàu bay định dạng điện tử lưu trên thiết bị di động (điện thoại, máy tính bảng, email,...) đều không có giá trị sử dụng trên các chuyến bay Quốc tế.
-          </p>
-          
-          <h3>Tại sân bay:</h3>
-          <p>
-            Quý khách có mặt tại quầy phục vụ khách Online Check-in trước giờ khởi hành 60 phút để nhân viên xác thực thông tin: Giấy tờ du lịch, Giấy tờ xuất/nhập cảnh và các giấy tờ khác theo quy định từ Nhà chức trách, Cơ quan xuất/nhập cảnh trước khi Quý khách vào khu vực xuất cảnh bên trong. Quy định này áp dụng bao gồm cả Quý khách không có hành lý ký gửi.
-          </p>
+      <div class="dropdown">
+        <a href="#">Thông tin hành trình <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Check-in</a>
+          <a href="#" class="dropdown-item">Thông tin sân bay</a>
+          <a href="#" class="dropdown-item">Chuyến bay của tôi</a>
         </div>
       </div>
 
-<!-- Modal Overlay (Nền tối) -->
-<div id="checkin-modal-overlay-CI" style="display: none;" onclick="closeCheckInModalCI()"></div>
+      <div class="dropdown">
+        <a href="#">Dịch vụ <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Dịch vụ hỗ trợ</a>
+          <a href="#" class="dropdown-item">Dịch vụ đặc biệt</a>
+        </div>
+      </div>
 
-<!-- Booking Check-in Success Modal -->
-<div id="checkin-modal-CI" class="checkin-modal-CI" style="display: none;">
-  <div class="checkin-modal-content-CI">
-    <span class="close-btn-CI" onclick="closeCheckInModalCI()">&times;</span>
-    <h2>Đã Check-in Thành Công!</h2>
-    <p>Chúc bạn có một chuyến bay vui vẻ và an toàn!</p>
-  </div>
-</div>
+      <div class="dropdown">
+        <a href="#">Mua vé <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Đặt mua</a>
+          <a href="#" class="dropdown-item">Hướng dẫn mua</a>
+          <a href="#" class="dropdown-item">Thanh toán</a>
+          <a href="#" class="dropdown-item">Thuế - Lệ phí</a>
+          <a href="#" class="dropdown-item">Phụ thu</a>
+        </div>
+      </div>
+    </div>
+    <h2>Check-in </h2>
+    <form id="CI-checkin-form">
+        <label for="CI-booking-id">Mã đặt chỗ</label>
+        <input type="text" id="CI-booking-id" name="CI-booking-id" required>
+        <button type="submit">Check-in</button>
+    </form>
 
-<script>
-  // Show the modal when "Tìm kiếm" is clicked
-  function showCheckInModalCI() {
-    // Get the value of the booking code input
-    const bookingCode = document.getElementById('booking-code-CI').value;
+    <!-- Success Message -->
+    <div id="checkin-success-message" style="display: none; text-align: center; color: green;">
+        <p>Check-in thành công!</p>
+    </div>
+    
+    <script>
+        document.getElementById('CI-checkin-form').onsubmit = function(e) {
+            e.preventDefault();
+            const CI_bookingId = document.getElementById('CI-booking-id').value;
+  
+            // Gửi yêu cầu check-in đến backend
+            fetch('/checkin', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ CI_bookingId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('checkin-success-message').style.display = 'block'; // Show success message
+                } else {
+                    alert('Không tìm thấy Booking ID hoặc có lỗi xảy ra!');
+                }
+            })
+            .catch(error => {
+                console.error('Có lỗi xảy ra:', error);
+                alert('Đã xảy ra lỗi trong quá trình check-in!');
+            });
+        };
+      </script>
 
-    if (bookingCode) {
-      // If there's a valid booking code, show the modal and overlay
-      document.getElementById('checkin-modal-CI').style.display = 'block';
-      document.getElementById('checkin-modal-overlay-CI').style.display = 'block';
-    } else {
-      // If no booking code is entered, alert the user
-      alert('Vui lòng nhập mã đặt chỗ.');
-    }
-  }
-
-  // Close the modal
-  function closeCheckInModalCI() {
-    document.getElementById('checkin-modal-CI').style.display = 'none';
-    document.getElementById('checkin-modal-overlay-CI').style.display = 'none';
-  }
-</script>
-
-        <!-- Footer -->
-    <footer
-    class="footer"
-    style="background-image: url(images-airplane/site-footer-shape-1.png)"
-  >
+    <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <!-- Liên kết nhanh -->
@@ -210,18 +141,6 @@
           </ul>
         </div>
 
-        <!-- Chính sách và điều khoản -->
-        <div class="footer-section">
-          <h3 class="footer-title">Chính sách</h3>
-          <ul class="footer-list">
-            <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
-            <li><a href="#" class="footer-link">Điều khoản dịch vụ</a></li>
-            <li><a href="CSHT.html" class="footer-link">Chính sách hoàn tiền</a></li>
-            <li>
-              <a href="#" class="footer-link">FAQ (Câu hỏi thường gặp)</a>
-            </li>
-          </ul>
-        </div>
         <!-- Mạng xã hội -->
         <div class="footer-section">
           <h3 class="footer-title">Kết nối với chúng tôi</h3>
@@ -252,6 +171,19 @@
             ></a>
           </div>
         </div>
+
+        <!-- Chính sách và điều khoản -->
+        <div class="footer-section">
+          <h3 class="footer-title">Chính sách</h3>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+            <li><a href="#" class="footer-link">Điều khoản dịch vụ</a></li>
+            <li><a href="#" class="footer-link">Chính sách hoàn tiền</a></li>
+            <li>
+              <a href="#" class="footer-link">FAQ (Câu hỏi thường gặp)</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="footer-bottom">
@@ -259,5 +191,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="aaa.js"></script>
 </body>
 </html>
