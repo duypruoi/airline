@@ -6,40 +6,6 @@ body {
     line-height: 1.5;
   }
   
-  /* Modal Styles */
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    background-color: #f8f7f1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-  }
-  
-  #closeModal {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .visible {
-    display: flex;
-  }
-  
   /* Header */
   .header1 {
     background-color: #123821;
@@ -263,122 +229,138 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  
-  .main-containeCBCTr {
+
+
+ /* Header Styling */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Form Styling */
+.status-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-  }
-  
-  .box-contentCBCT {
-    display: flex;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 1200px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .section-leftCBCT {
-    padding: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    max-width: 600px; /* Cố định chiều rộng cho phần nội dung */
-  }
-  
-  .section-rightCBCT {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
     width: 100%;
     max-width: 500px;
-    position: relative;
-    display: flex;
-    justify-content: flex-end; /* Căn chỉnh ảnh về phía bên phải */
-    align-items: center; /* Căn giữa ảnh theo chiều dọc */
-    padding: 20px;
-    margin-left: 40px; /* Khoảng cách giữa ảnh và phần nội dung */
-  }
-  
-  .section-rightCBCT img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px; /* Bo góc ảnh */
-  }
-  
-  .input-groupCBCT {
-    margin-bottom: 20px;
-  }
-  
-  .input-groupCBCT label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .input-groupCBCT input {
-    width: 100%;
-    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.status-form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.status-form input {
+    padding: 12px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.status-form input:focus {
+    border-color: #007BFF;
+}
+
+.status-form button {
+    padding: 14px;
     font-size: 16px;
-  }
-  
-  .input-groupCBCT input:focus {
-    border-color: #007bff;
-  }
-  
-  .search-buttonCBCT {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #ffc107;
-    color: black;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.status-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Booking Info Section */
+.booking-info {
+    display: none;
+    margin-top: 40px;
+}
+
+.info-container {
+    background-color: #fff;
+    padding: 25px;
     margin-top: 20px;
-  }
-  
-  .search-buttonCBCT:hover {
-    background: #e0a800;
-  }
-  
-  .page-headerCBCT {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-container p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Passenger List Styling */
+.passenger-list {
+    margin-top: 30px;
+}
+
+.passenger {
+    background-color: #f9f9f9;
+    padding: 18px;
     margin-bottom: 20px;
-  }
-  
-  .page-headerCBCT a {
-    text-decoration: none;
-    color: #dc3545;
-    font-weight: bold;
-  }
-  
-  .page-headerCBCT a.disabledCBCT {
-    color: #ccc;
-  }
-  
-  /* Đảm bảo rằng bố cục sẽ thay đổi linh động trên các màn hình nhỏ */
-  @media (max-width: 768px) {
-    .box-contentCBCT {
-      flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.passenger h4 {
+    color: #007BFF;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.passenger p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .status-form {
+        max-width: 100%;
+        padding: 15px;
     }
-  
-    .section-leftCBCT,
-    .section-rightCBCT {
-      width: 100%;
-      max-width: none;
+
+    .status-form button {
+        font-size: 14px;
     }
-  
-    .section-rightCBCT img {
-      border-radius: 10px;
+
+    .info-container {
+        padding: 20px;
     }
-  }
-  
+
+    .passenger {
+        padding: 15px;
+    }
+}
