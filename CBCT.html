@@ -2,25 +2,23 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <title>Q Airlines Website</title>
+    <title>Chuyến bay của tôi</title>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CBCT.css" />
+    <link rel="stylesheet" href="cbctt.css" />
   </head>
     <!-- Header -->
     <header class="header1">
       <div class="container1">
         <div class="logo-container1">
-            <a href="index.html">  <!-- bám vào logo quay về trang chủ -->
-            <img
-              alt="Logo Q Airlines"
-              class="logo1"
-              src="https://statics.vinpearl.com/thue-xe-tu-lai-ha-noi-1_1691044493.jpg"
-            />
-          </a>
+          <img
+            alt="Logo Q Airlines"
+            class="logo1"
+            src="images-airplane/logo_icon_final.png"
+          />
         </div>
         <div class="header-right1">
           <a href="#">Đăng nhập</a>
@@ -30,91 +28,114 @@
       </div>
     </header>
 
-      <!-- Navbar -->
-      <div class="navbar">
-        <div class="dropdown">
-          <a href="#">Chuyến bay <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="DD.html" class="dropdown-item">Điểm đến</a>
-            <a href="#" class="dropdown-item">Lịch bay</a>
-            <a href="UD.html" class="dropdown-item">Ưu đãi</a>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a href="#">Thông tin hành trình <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="CI.html" class="dropdown-item">Check-in</a>
-            <a href="TTSB.html" class="dropdown-item">Thông tin sân bay</a>
-            <a href="#" class="dropdown-item">Chuyến bay của tôi</a>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a href="#">Dịch vụ <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="DV1.html" class="dropdown-item">Dịch vụ hỗ trợ</a>
-            <a href="DV2.html" class="dropdown-item">Dịch vụ đặc biệt</a>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a href="#">Mua vé <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="MV.html" class="dropdown-item">Đặt mua</a>
-            <a href="HDM.html" class="dropdown-item">Hướng dẫn mua</a>
-            <a href="#" class="dropdown-item">Thanh toán</a>
-            <a href="THUE.html" class="dropdown-item">Thuế - Lệ phí</a>
-            <a href="THUE.html" class="dropdown-item">Phụ thu</a>
-          </div>
+    
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="dropdown">
+        <a href="#">Chuyến bay <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#travel-destinations" class="dropdown-item">Điểm đến</a>
+          <a href="lich-bay.html" class="dropdown-item">Lịch bay</a>
+          <a href="#promotion-section" class="dropdown-item">Ưu đãi</a>
         </div>
       </div>
 
-
-      <div class="main-containeCBCTr">
-        <div class="box-contentCBCT">
-          <div class="section-leftCBCT">
-            <h2>
-              CHUYẾN BAY CỦA TÔI
-            </h2>
-            <p>
-              Bạn muốn xem chuyến bay đã đặt, đổi lịch trình bay hay mua thêm dịch vụ hành lý, chỗ ngồi, suất ăn..., vui lòng điền thông tin bên dưới:
-            </p>
-            <div class="input-groupCBCT">
-              <label for="booking-code">
-                Mã đặt chỗ 
-              </label>
-              <input id="booking-codeCBCT" required="" type="text"/>
-            </div>
-            <div class="input-groupCBCT">
-              <label for="last-nameCBCT">
-                Họ 
-              </label>
-              <input id="last-nameCBCT" required="" type="text"/>
-            </div>
-            <div class="input-groupCBCT">
-              <label for="middle-nameCBCT">
-                Tên và tên đệm 
-              </label>
-              <input id="middle-nameCBCT" required="" type="text"/>
-            </div>
-            <button class="search-buttonCBCT">
-              Tìm kiếm
-            </button>
-          </div>
-          <div class="section-rightCBCT">
-            <img alt="ảnh" height="500" src="https://www.travomint.com/resources/images/blog/get-a-refund.jpg" width="400"/>
-          </div>
+      <div class="dropdown">
+        <a href="#">Thông tin hành trình <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Check-in</a>
+          <a href="#" class="dropdown-item">Thông tin sân bay</a>
+          <a href="#" class="dropdown-item">Chuyến bay của tôi</a>
         </div>
       </div>
 
+      <div class="dropdown">
+        <a href="#">Dịch vụ <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Dịch vụ hỗ trợ</a>
+          <a href="#" class="dropdown-item">Dịch vụ đặc biệt</a>
+        </div>
+      </div>
 
+      <div class="dropdown">
+        <a href="#">Mua vé <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Đặt mua</a>
+          <a href="#" class="dropdown-item">Hướng dẫn mua</a>
+          <a href="#" class="dropdown-item">Thanh toán</a>
+          <a href="#" class="dropdown-item">Thuế - Lệ phí</a>
+          <a href="#" class="dropdown-item">Phụ thu</a>
+        </div>
+      </div>
+    </div>
+    <h2>Kiểm tra Trạng thái Booking</h2>
+    <form id="status-form" class="status-form">
+      <label for="booking-id">Nhập Booking ID:</label>
+      <input type="text" id="booking-id" name="booking-id" required placeholder="VD: ABC123" />
+      <button type="submit" class="btn-submit">Xem Trạng thái</button>
+    </form>
 
-       <!-- Footer -->
-    <footer
-    class="footer"
-    style="background-image: url(images-airplane/site-footer-shape-1.png)"
-  >
+    <div id="booking-info" class="booking-info">
+      <h3>Thông tin chuyến bay:</h3>
+      <div class="info-container">
+        <p id="fnumber"></p>
+        <p id="airplane-name"></p>
+        <p id="departure-city"></p>
+        <p id="arrival-city"></p>
+        <p id="departure-date"></p>
+        <p id="departure-time"></p>
+        <p id="status"></p>
+      </div>
+
+      <h3>Thông tin hành khách:</h3>
+      <div id="passenger-list" class="passenger-list"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('status-form').onsubmit = function(e) {
+      e.preventDefault();
+      const bookingId = document.getElementById('booking-id').value;
+
+      fetch(`/getBookingStatus?bookingId=${bookingId}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            const flight = data.flight;
+            document.getElementById('fnumber').innerText = `Mã chuyến bay: ${flight.fnumber}`;
+            document.getElementById('airplane-name').innerText = `Máy bay: ${flight.airplane_name}`;
+            document.getElementById('departure-city').innerText = `Điểm đi: ${flight.departure_city}`;
+            document.getElementById('arrival-city').innerText = `Điểm đến: ${flight.arrival_city}`;
+            document.getElementById('departure-date').innerText = `Ngày đi: ${flight.departureDate}`;
+            document.getElementById('departure-time').innerText = `Thời gian đi: ${flight.departureTime}`;
+            document.getElementById('status').innerText = `Tình trạng vé: ${data.bookingStatus}`;
+
+            const passengerList = document.getElementById('passenger-list');
+            passengerList.innerHTML = '';
+            data.passengers.forEach((passenger, index) => {
+              const passengerDiv = document.createElement('div');
+              passengerDiv.classList.add('passenger');
+              passengerDiv.innerHTML = `
+                <h4>Hành khách ${index + 1}</h4>
+                <p>Tên: ${passenger.fname} ${passenger.lname}</p>
+                <p>Tuổi: ${passenger.age}</p>
+                <p>Email: ${passenger.email}</p>
+              `;
+              passengerList.appendChild(passengerDiv);
+            });
+          } else {
+            alert('Không tìm thấy thông tin cho Booking ID này.');
+          }
+        })
+        .catch(error => {
+          console.error('Lỗi:', error);
+          alert('Đã xảy ra lỗi khi lấy thông tin.');
+        });
+    };
+  </script>
+  
+    <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <!-- Liên kết nhanh -->
@@ -147,18 +168,6 @@
           </ul>
         </div>
 
-        <!-- Chính sách và điều khoản -->
-        <div class="footer-section">
-          <h3 class="footer-title">Chính sách</h3>
-          <ul class="footer-list">
-            <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
-            <li><a href="#" class="footer-link">Điều khoản dịch vụ</a></li>
-            <li><a href="CSHT.html" class="footer-link">Chính sách hoàn tiền</a></li>
-            <li>
-              <a href="#" class="footer-link">FAQ (Câu hỏi thường gặp)</a>
-            </li>
-          </ul>
-        </div>
         <!-- Mạng xã hội -->
         <div class="footer-section">
           <h3 class="footer-title">Kết nối với chúng tôi</h3>
@@ -189,12 +198,30 @@
             ></a>
           </div>
         </div>
+
+        <!-- Chính sách và điều khoản -->
+        <div class="footer-section">
+          <h3 class="footer-title">Chính sách</h3>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+            <li><a href="#" class="footer-link">Điều khoản dịch vụ</a></li>
+            <li><a href="#" class="footer-link">Chính sách hoàn tiền</a></li>
+            <li>
+              <a href="#" class="footer-link">FAQ (Câu hỏi thường gặp)</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2024 BAAE. Tất cả quyền lợi được bảo lưu.</p>
       </div>
     </div>
+  </footer>
+
+  <script src="aaa.js"></script>
+</body>
+</html>
   </footer>
 </body>
 </html>
